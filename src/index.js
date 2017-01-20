@@ -22,8 +22,7 @@ const { width, height } = Dimensions.get('window')
  */
 const styles = {
   container: {
-    backgroundColor: 'transparent',
-    position: 'relative'
+    backgroundColor: 'transparent'
   },
 
   wrapper: {
@@ -626,8 +625,7 @@ export default class extends Component {
 
     return (
       <View style={[styles.container, {
-        width: state.width,
-        height: state.height
+        flex: 1
       }]}>
         {this.renderScrollView(pages)}
         {props.showsPagination && (props.renderPagination
